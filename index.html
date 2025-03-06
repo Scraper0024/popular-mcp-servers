@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular MCP Servers</title>
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #4f46e5;
+            --background-color: #f9fafb;
+            --card-color: #ffffff;
+            --text-color: #1f2937;
+            --text-secondary: #4b5563;
+            --border-color: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: var(--card-color);
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .search-container {
+            margin: 2rem 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #search {
+            padding: 0.75rem 1rem;
+            width: 100%;
+            max-width: 500px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .server-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .server-card {
+            background-color: var(--card-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .server-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .server-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .server-usage {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+
+        .server-description {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .server-link {
+            display: inline-block;
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .server-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .github-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .github-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .server-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Most Popular Model Context Protocol (MCP) Servers</h1>
+            <p class="description">
+                A curated list of the most popular MCP servers based on usage data from Smithery.ai. 
+                The Model Context Protocol (MCP) is an open standard that enables developers to build secure, 
+                two-way connections between their data sources and AI-powered tools.
+            </p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search for MCP servers...">
+        </div>
+
+        <div class="server-grid" id="serverGrid">
+            <!-- Server cards will be dynamically inserted here -->
+        </div>
+
+        <footer>
+            <p>
+                View the full repository on 
+                <a href="https://github.com/pedrojaques99/popular-mcp-servers" class="github-link" target="_blank">GitHub</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Server data
+        const servers = [
+            {
+                name: "Sequential Thinking",
+                id: "@smithery-ai/server-sequential-thinking",
+                usage: "5,550+",
+                description: "Provides a tool for dynamic and reflective problem-solving through a structured thinking process",
+                link: "https://smithery.ai/?q=sequential-thinking"
+            },
+            {
+                name: "wcgw",
+                id: "wcgw",
+                usage: "4,920+",
+                description: "Shell and coding agent on Claude and ChatGPT",
+                link: "https://smithery.ai/?q=wcgw"
+            },
+            {
+                name: "Github",
+                id: "@smithery-ai/github",
+                usage: "2,890+",
+                description: "Access the GitHub API, enabling file operations, repository management, search functionality, and more",
+                link: "https://smithery.ai/?q=github"
+            },
+            {
+                name: "Brave Search",
+                id: "@smithery-ai/brave-search",
+                usage: "680+",
+                description: "Integrate web and local search capabilities",
+                link: "https://smithery.ai/?q=brave-search"
+            },
+            {
+                name: "Web Research",
+                id: "@mzxrai/mcp-webresearch",
+                usage: "533+",
+                description: "Augments LLMs with better research capabilities, providing Google search integration, webpage content extraction, research session tracking and more",
+                link: "https://smithery.ai/?q=webresearch"
+            },
+            {
+                name: "iTerm",
+                id: "iterm-mcp",
+                usage: "402+",
+                description: "Execute commands in the current iTerm session",
+                link: "https://smithery.ai/?q=iterm"
+            },
+            {
+                name: "TaskManager",
+                id: "@kazuph/mcp-taskmanager",
+                usage: "374+",
+                description: "Model Context Protocol server for Task Management, allowing Claude Desktop (or any MCP client) to manage and execute tasks in a queue-based system",
+                link: "https://smithery.ai/?q=taskmanager"
+            },
+            {
+                name: "SQLite Server",
+                id: "mcp-server-sqlite-npx",
+                usage: "274+",
+                description: "A Node.js implementation of the Model Context Protocol SQLite server, providing an npx-based alternative for environments lacking Python's UVX runner",
+                link: "https://smithery.ai/?q=sqlite"
+            },
+            {
+                name: "Fetch",
+                id: "@smithery-ai/fetch",
+                usage: "269+",
+                description: "A simple tool that performs a fetch request to a webpage",
+                link: "https://smithery.ai/?q=fetch"
+            },
+            {
+                name: "Knowledge Graph Memory Server",
+                id: "@smithery-ai/memory",
+                usage: "263+",
+                description: "Enable persistent memory using a local knowledge graph",
+                link: "https://smithery.ai/?q=memory"
+            },
+            {
+                name: "Playwright",
+                id: "@executeautomation/playwright-mcp-server",
+                usage: "257+",
+                description: "Provides browser automation capabilities using Playwright, enabling LLMs to interact with web pages, take screenshots, and execute JavaScript in a browser environment",
+                link: "https://smithery.ai/?q=playwright"
+            },
+            {
+                name: "Dice Roller",
+                id: "mcp-dice",
+                usage: "246+",
+                description: "Roll dice using standard dice notation and return results with their total sum",
+                link: "https://smithery.ai/?q=dice"
+            },
+            {
+                name: "Desktop Commander",
+                id: "@wonderwhy-er/desktop-commander",
+                usage: "199+",
+                description: "Execute terminal commands and manage files with editing capabilities",
+                link: "https://smithery.ai/?q=desktop-commander"
+            },
+            {
+                name: "Exa",
+                id: "exa",
+                usage: "171+",
+                description: "Bring knowledge to your AI via the Exa Search API for real-time semantic web searches",
+                link: "https://smithery.ai/?q=exa"
+            },
+            {
+                name: "Obsidian Reader",
+                id: "mcp-obsidian",
+                usage: "144+",
+                description: "Read and search within a directory of Markdown notes in an Obsidian vault",
+                link: "https://smithery.ai/?q=obsidian"
+            },
+            {
+                name: "MySQL Server",
+                id: "@f4ww4z/mcp-mysql-server",
+                usage: "131+",
+                description: "A Model Context Protocol server for MySQL database operations",
+                link: "https://smithery.ai/?q=mysql"
+            },
+            {
+                name: "Shodan Server",
+                id: "@burtthecoder/mcp-shodan",
+                usage: "131+",
+                description: "A Model Context Protocol server for querying the Shodan API and Shodan CVEDB, providing access to network intelligence and security services",
+                link: "https://smithery.ai/?q=shodan"
+            },
+            {
+                name: "Audiense Insights",
+                id: "@AudienseCo/mcp-audiense-insights",
+                usage: "81+",
+                description: "Extract marketing insights and audience analysis from Audiense reports",
+                link: "https://smithery.ai/?q=audiense"
+            }
+        ];
+
+        // Function to render server cards
+        function renderServerCards(serversToRender) {
+            const serverGrid = document.getElementById('serverGrid');
+            serverGrid.innerHTML = '';
+
+            if (serversToRender.length === 0) {
+                serverGrid.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No servers found matching your search.</p>';
+                return;
+            }
+
+            serversToRender.forEach(server => {
+                const card = document.createElement('div');
+                card.className = 'server-card';
+                card.innerHTML = `
+                    <div class="server-usage">${server.usage} uses</div>
+                    <div class="server-name">${server.name}</div>
+                    <div class="server-id">${server.id}</div>
+                    <p class="server-description">${server.description}</p>
+                    <a href="${server.link}" class="server-link" target="_blank">View on Smithery</a>
+                `;
+                serverGrid.appendChild(card);
+            });
+        }
+
+        // Initial render
+        renderServerCards(servers);
+
+        // Search functionality
+        const searchInput = document.getElementById('search');
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
+            const filteredServers = servers.filter(server => 
+                server.name.toLowerCase().includes(searchTerm) || 
+                server.id.toLowerCase().includes(searchTerm) || 
+                server.description.toLowerCase().includes(searchTerm)
+            );
+            renderServerCards(filteredServers);
+        });
+    </script>
+</body>
+</html>
