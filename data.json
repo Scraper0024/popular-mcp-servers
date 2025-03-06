@@ -1,0 +1,183 @@
+{
+  "last_updated": "2025-03-06",
+  "source": "https://smithery.ai/",
+  "servers": [
+    {
+      "name": "Sequential Thinking",
+      "id": "@smithery-ai/server-sequential-thinking",
+      "usage": 5550,
+      "description": "Provides a tool for dynamic and reflective problem-solving through a structured thinking process",
+      "link": "https://smithery.ai/?q=sequential-thinking"
+    },
+    {
+      "name": "wcgw",
+      "id": "wcgw",
+      "usage": 4920,
+      "description": "Shell and coding agent on Claude and ChatGPT",
+      "link": "https://smithery.ai/?q=wcgw"
+    },
+    {
+      "name": "Github",
+      "id": "@smithery-ai/github",
+      "usage": 2890,
+      "description": "Access the GitHub API, enabling file operations, repository management, search functionality, and more",
+      "link": "https://smithery.ai/?q=github"
+    },
+    {
+      "name": "Brave Search",
+      "id": "@smithery-ai/brave-search",
+      "usage": 680,
+      "description": "Integrate web and local search capabilities",
+      "link": "https://smithery.ai/?q=brave-search"
+    },
+    {
+      "name": "Web Research",
+      "id": "@mzxrai/mcp-webresearch",
+      "usage": 533,
+      "description": "Augments LLMs with better research capabilities, providing Google search integration, webpage content extraction, research session tracking and more",
+      "link": "https://smithery.ai/?q=webresearch"
+    },
+    {
+      "name": "iTerm",
+      "id": "iterm-mcp",
+      "usage": 402,
+      "description": "Execute commands in the current iTerm session",
+      "link": "https://smithery.ai/?q=iterm"
+    },
+    {
+      "name": "TaskManager",
+      "id": "@kazuph/mcp-taskmanager",
+      "usage": 374,
+      "description": "Model Context Protocol server for Task Management, allowing Claude Desktop (or any MCP client) to manage and execute tasks in a queue-based system",
+      "link": "https://smithery.ai/?q=taskmanager"
+    },
+    {
+      "name": "SQLite Server",
+      "id": "mcp-server-sqlite-npx",
+      "usage": 274,
+      "description": "A Node.js implementation of the Model Context Protocol SQLite server, providing an npx-based alternative for environments lacking Python's UVX runner",
+      "link": "https://smithery.ai/?q=sqlite"
+    },
+    {
+      "name": "Fetch",
+      "id": "@smithery-ai/fetch",
+      "usage": 269,
+      "description": "A simple tool that performs a fetch request to a webpage",
+      "link": "https://smithery.ai/?q=fetch"
+    },
+    {
+      "name": "Knowledge Graph Memory Server",
+      "id": "@smithery-ai/memory",
+      "usage": 263,
+      "description": "Enable persistent memory using a local knowledge graph",
+      "link": "https://smithery.ai/?q=memory"
+    },
+    {
+      "name": "Playwright",
+      "id": "@executeautomation/playwright-mcp-server",
+      "usage": 257,
+      "description": "Provides browser automation capabilities using Playwright, enabling LLMs to interact with web pages, take screenshots, and execute JavaScript in a browser environment",
+      "link": "https://smithery.ai/?q=playwright"
+    },
+    {
+      "name": "Dice Roller",
+      "id": "mcp-dice",
+      "usage": 246,
+      "description": "Roll dice using standard dice notation and return results with their total sum",
+      "link": "https://smithery.ai/?q=dice"
+    },
+    {
+      "name": "Desktop Commander",
+      "id": "@wonderwhy-er/desktop-commander",
+      "usage": 199,
+      "description": "Execute terminal commands and manage files with editing capabilities",
+      "link": "https://smithery.ai/?q=desktop-commander"
+    },
+    {
+      "name": "Exa",
+      "id": "exa",
+      "usage": 171,
+      "description": "Bring knowledge to your AI via the Exa Search API for real-time semantic web searches",
+      "link": "https://smithery.ai/?q=exa"
+    },
+    {
+      "name": "Obsidian Reader",
+      "id": "mcp-obsidian",
+      "usage": 144,
+      "description": "Read and search within a directory of Markdown notes in an Obsidian vault",
+      "link": "https://smithery.ai/?q=obsidian"
+    },
+    {
+      "name": "MySQL Server",
+      "id": "@f4ww4z/mcp-mysql-server",
+      "usage": 131,
+      "description": "A Model Context Protocol server for MySQL database operations",
+      "link": "https://smithery.ai/?q=mysql"
+    },
+    {
+      "name": "Shodan Server",
+      "id": "@burtthecoder/mcp-shodan",
+      "usage": 131,
+      "description": "A Model Context Protocol server for querying the Shodan API and Shodan CVEDB, providing access to network intelligence and security services",
+      "link": "https://smithery.ai/?q=shodan"
+    },
+    {
+      "name": "Audiense Insights",
+      "id": "@AudienseCo/mcp-audiense-insights",
+      "usage": 81,
+      "description": "Extract marketing insights and audience analysis from Audiense reports",
+      "link": "https://smithery.ai/?q=audiense"
+    }
+  ],
+  "other_notable_servers": [
+    {
+      "name": "AWS S3",
+      "description": "A sample MCP server for AWS S3 that flexibly fetches objects from S3 such as PDF documents"
+    },
+    {
+      "name": "Airtable",
+      "description": "Read and write access to Airtable databases, with schema inspection"
+    },
+    {
+      "name": "Docker",
+      "description": "Integrate with Docker to manage containers, images, volumes, and networks"
+    },
+    {
+      "name": "Google Calendar",
+      "description": "Integration with Google Calendar to check schedules, find time, and add/delete events"
+    },
+    {
+      "name": "Kubernetes",
+      "description": "Connect to Kubernetes cluster and manage pods, deployments, and services"
+    },
+    {
+      "name": "MongoDB",
+      "description": "A Model Context Protocol Server for MongoDB"
+    },
+    {
+      "name": "Notion",
+      "description": "Interact with Notion API"
+    },
+    {
+      "name": "Qdrant",
+      "description": "Vector search engine integration for semantic memory storage and retrieval"
+    }
+  ],
+  "resources": [
+    {
+      "name": "Smithery.ai",
+      "description": "A registry of MCP servers",
+      "link": "https://smithery.ai/"
+    },
+    {
+      "name": "MCP Reference Servers",
+      "description": "Official repository with reference implementations",
+      "link": "https://github.com/smithery-ai/reference-servers"
+    },
+    {
+      "name": "Model Context Protocol Documentation",
+      "description": "Official documentation",
+      "link": "https://modelcontextprotocol.io/"
+    }
+  ]
+}
