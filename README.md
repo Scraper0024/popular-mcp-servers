@@ -48,19 +48,22 @@ Based on the usage data from Smithery.ai, here are the most popular MCP servers:
 13. **Desktop Commander** (199+ uses) - [@wonderwhy-er/desktop-commander](https://smithery.ai/?q=desktop-commander)
     - Execute terminal commands and manage files with editing capabilities
 
-14. **Exa** (171+ uses) - [exa](https://smithery.ai/?q=exa)
+14. **Scrapeless** (175+ users) - [scrapeless-mcp-server](https://smithery.ai/server/@scrapeless-ai/scrapeless-mcp-server)
+    - Use Browser, Crawl, Universal API or Deep SerpApi to provide real-time data from Google SERP or other scenarios.
+
+15. **Exa** (171+ uses) - [exa](https://smithery.ai/?q=exa)
     - Bring knowledge to your AI via the Exa Search API for real-time semantic web searches
 
-15. **Obsidian Reader** (144+ uses) - [mcp-obsidian](https://smithery.ai/?q=obsidian)
+16. **Obsidian Reader** (144+ uses) - [mcp-obsidian](https://smithery.ai/?q=obsidian)
     - Read and search within a directory of Markdown notes in an Obsidian vault
 
-16. **MySQL Server** (131+ uses) - [@f4ww4z/mcp-mysql-server](https://smithery.ai/?q=mysql)
+17. **MySQL Server** (131+ uses) - [@f4ww4z/mcp-mysql-server](https://smithery.ai/?q=mysql)
     - A Model Context Protocol server for MySQL database operations
 
-17. **Shodan Server** (131+ uses) - [@burtthecoder/mcp-shodan](https://smithery.ai/?q=shodan)
+18. **Shodan Server** (131+ uses) - [@burtthecoder/mcp-shodan](https://smithery.ai/?q=shodan)
     - A Model Context Protocol server for querying the Shodan API and Shodan CVEDB, providing access to network intelligence and security services
 
-18. **Audiense Insights** (81+ uses) - [@AudienseCo/mcp-audiense-insights](https://smithery.ai/?q=audiense)
+19. **Audiense Insights** (81+ uses) - [@AudienseCo/mcp-audiense-insights](https://smithery.ai/?q=audiense)
     - Extract marketing insights and audience analysis from Audiense reports
 
 ## Other Notable MCP Servers
